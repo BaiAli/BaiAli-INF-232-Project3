@@ -1,0 +1,37 @@
+{% extends  'main.html' %}
+{% block content %}
+<h1>Cities</h1>
+<div class = "bock">
+    <div class = "info">
+        <ul>
+   
+            {% for p in posts %}
+            <li>
+            <h2>{{p.nameoftypes}}</h2>
+            <p> population : {{p.prices}} млн </p>
+            <p> location :{{p.title}}</p>
+            </li>    
+            {% endfor %}
+               
+        </ul>
+    </div>
+<div class = "imgofcity">
+    <img src="http://events.dmt.kz/wp-content/uploads/2017/01/koktobe7.jpg" alt=""width="400px" height="400px">
+    <img src="https://turkystan.kz/wp-content/uploads/2021/07/fcnfyf.jpg"alt=""width="400px" height="400px">
+    <img src="https://pbs.twimg.com/media/D2UxthlW0AA2LsZ.jpg:large" alt=""width="400px" height="400px">
+    <img src="https://rus.azattyq-ruhy.kz/cache/imagine/main_page_full/uploads/news/2020/04/06/5e8ad3c667614213011870.jpg" alt=""width="400px" height="400px">
+    <img src="https://adilettv.kz/wp-content/uploads/2019/12/%D1%88%D1%8B%D0%BC%D0%BA%D0%B5%D0%BD%D1%8201.jpg" alt=""width="400px" height="400px">
+    
+</div>
+
+</div>
+<style>
+    .bock {
+        display: flex;
+    }
+    .imgofcity{
+        display:inline-flexbox;
+    }
+    
+</style>
+{% endblock %}

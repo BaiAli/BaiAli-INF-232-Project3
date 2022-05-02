@@ -1,0 +1,21 @@
+
+
+{% block body %}
+
+<form method="POST">
+    {% csrf_token %}
+    <div>
+        <h4>Traditi</h4> 
+        {{ form.conclusion }}
+    </div>
+    
+    <input type="submit" name="Submit">
+</form>
+
+<style>
+    form {
+        margin-left: 35%;
+        margin-top: 15%;
+    }
+</style>
+{% endblock %}

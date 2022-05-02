@@ -1,0 +1,32 @@
+{% extends  'main.html' %}
+{% block content %}
+  <div class = "ali">
+   <h1>Important Dates</h1>
+
+<ul>
+    
+    {% for p in facts %}
+    <li>
+    <h2 class = "ali3">{{p.importantyears}}</h2>
+    <p class = "ali2"> Conclusion : {{p.conclusion}}  </p>
+    <p> Person : {{p.famouspeople}}</p>
+    </li>    
+    {% endfor %}
+       
+</ul>
+</div>
+
+<style>
+    .ali{
+        background-image: url("https://atr.kz/wp-content/uploads/2020/04/1445423980e09mb_1000x768.jpg");
+    }
+    .ali2 {
+        color: chartreuse;
+    }
+    .ali3 {
+           color:aqua;
+    }
+</style>
+
+{% endblock %}
+

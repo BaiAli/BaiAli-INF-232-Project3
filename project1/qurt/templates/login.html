@@ -1,0 +1,19 @@
+{% extends  'main.html' %}
+{% block content %}
+  <h1> Nature</h1>
+<ul>
+    <div class = "ls">
+        {% for p in parks %}
+        <li>
+        <h2 class = "ali3">{{p.name}}</h2>
+        <p class = "ali2"> located at : {{p.location}}  </p>
+        <p> date: {{p.datestarting}}</p>
+        </li>    
+        {% endfor %}
+           
+    </ul>
+    </div>
+   
+<style>
+</style>
+{% endblock %}
